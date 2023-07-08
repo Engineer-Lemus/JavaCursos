@@ -1,0 +1,23 @@
+package javaSegundoEjercicio;
+
+public class TipoVariable {
+	
+	public static void main (String[] args) {
+	
+		System.out.println(" !!! Hola Mundo !!! ");
+		
+		int edad = 28;
+		System.out.println(edad);
+		
+		edad = 47;
+		System.out.println(edad);
+		
+		edad = 47*85;
+		System.out.println("La edad de la tierra es " + edad + " miles de años");
+		
+		double salario = 1250.50;
+		System.out.println(salario);
+		
+	}
+
+}
