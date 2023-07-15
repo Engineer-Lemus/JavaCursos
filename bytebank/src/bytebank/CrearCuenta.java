@@ -2,29 +2,40 @@ package bytebank;
 
 public class CrearCuenta {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        Cuenta primeraCuenta = new Cuenta();
+        // primeraCuenta.saldo = 200;
+        primeraCuenta.deposita(200);
+        System.out.println(primeraCuenta.getSaldo());
 
-		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.depositar(400);
+        // primeraCuenta.saldo += 100;
+        primeraCuenta.deposita(100);
+        System.out.println(primeraCuenta.getSaldo());
 
-		System.out.println(primeraCuenta.getSaldo());
+        Cuenta segundaCuenta = new Cuenta();
+        // segundaCuenta.saldo = 50;
+        segundaCuenta.deposita(50);
 
-		Cuenta segundaCuenta = new Cuenta();
-		segundaCuenta.depositar(400);
+        System.out.println("primera Cuenta tiene " + primeraCuenta.getSaldo());
+        System.out.println("segunda Cuenta tiene " + segundaCuenta.getSaldo());
 
-		System.out.println(segundaCuenta.getSaldo());
+        System.out.println(primeraCuenta.getAgencia());
+        System.out.println(primeraCuenta.getNumero());
 
-		System.out.println(primeraCuenta);
-		System.out.println(segundaCuenta);
+        System.out.println(segundaCuenta.getAgencia());
 
-		if (primeraCuenta.getSaldo() == segundaCuenta.getSaldo()) {
+        // segundaCuenta.agencia = 146;
+        segundaCuenta.setAgencia(146);
+        System.out.println("Ahora la segunda cuenta esta en la agencia " + segundaCuenta.getAgencia());
 
-			System.out.println("Son el mismo objeto");
-		} else {
-			System.out.println(" Son diferentes ");
+        if(primeraCuenta == segundaCuenta) {
+            System.out.println("misma cuenta");
+        } else {
+            System.out.println("cuentas diferentes");
+        }
 
-		}
-
-	}
+        System.out.println(primeraCuenta);
+        System.out.println(segundaCuenta);
+    }
 
 }
