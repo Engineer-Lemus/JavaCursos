@@ -3,10 +3,8 @@ package bytebankHeredado;
 public class TestGerente {
 
 	public static void main(String[] args) {
-		 Gerente gerente = new Gerente();
-		// gerente.setSalario(95000);
+		Gerente gerente = new Gerente();
 
-		//Funcionario gerente = new Funcionario();
 		gerente.setSalario(95000);
 		gerente.setNombre("Lemus");
 		gerente.setTipo(1);
@@ -15,7 +13,6 @@ public class TestGerente {
 		System.out.println(gerente.getBonificacion());
 		System.out.println(gerente.getNombre());
 		System.out.println(gerente.iniciarSesion("AluraCursos"));
-		
 
 	}
 }

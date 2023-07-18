@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="bytebank.Cuenta"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.CuentaAhorros"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.Funcionario"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.FuncionarioAutenticable"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.Autenticable"/>
 </qualifiedTypeNameHistroy>

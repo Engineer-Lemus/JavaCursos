@@ -1,6 +1,6 @@
 package bytebankHeredado;
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements Autenticable {
 
 	private String clave;
 
@@ -12,9 +12,9 @@ public class Gerente extends Funcionario {
 		return clave == "AluraCursos";
 	}
 
-		//sobre escritura de metodo
 	public double getBonificacion() {
-		return super.getSalario() + super.getBonificacion();
+		System.out.println("Ejecutando test desde gerente");
+		return super.getSalario() + this.getSalario() * 0.05;
 
 	}
 }
