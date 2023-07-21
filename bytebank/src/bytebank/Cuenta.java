@@ -1,5 +1,6 @@
 package bytebank;
 
+
 class Cuenta {
 
 	double saldo;
@@ -18,15 +19,11 @@ class Cuenta {
 	}
 
 	public Cuenta(int agencia) {
-		if (agencia <= 0) {
-			System.out.println("No se permite 0");
-			this.agencia = 1;
-		}else {
-			this.agencia = agencia;
-		}
-		total++;
-		
-		System.out.println("Se van creando : " + total + " cuentas");
+		this.agencia = agencia;
+		System.out.println(" Estoy Creando una Cuenta " + this.numero);
+
+		Cuenta.total++;
+
 	}
 
 	public int getNumero() {

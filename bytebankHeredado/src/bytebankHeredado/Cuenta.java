@@ -19,9 +19,9 @@ public abstract class Cuenta {
 	public Cuenta(int agencia, int numero) {
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println(" Estoy Creando : " + total + " cuentas ");
+		System.out.println(" Estoy Creando una Cuenta " + this.numero);
 
-		total++;
+		Cuenta.total++;
 
 	}
 
@@ -35,21 +35,24 @@ public abstract class Cuenta {
 		}
 	}
 
-	public abstract void  depositar(double valor); 
+	public abstract void depositar(double valor);
 
+	public void retirar(double valor) throws SaldoInsuficienteException  {
+		if (this.saldo < valor) {
+			throw new SaldoInsuficienteException("No tienes Saldo");
 
-	public boolean retirar(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
 		}
-		return false;
-
+		this.saldo -= valor;
 	}
 
 	public boolean transferir(double valor, Cuenta cuenta) {
 		if (this.saldo >= valor) {
-			this.retirar(valor);
+			try {
+				this.retirar(valor);
+			} catch (SaldoInsuficienteException e) {
+				
+				e.printStackTrace();
+			}
 			cuenta.depositar(valor);
 			return true;
 		} else {
@@ -83,6 +86,6 @@ public abstract class Cuenta {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Ejecutando test de gerente");
+		
 	}
 }

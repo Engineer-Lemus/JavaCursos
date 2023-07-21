@@ -3,20 +3,20 @@ package bytebank;
 public class TestMetodos {
 
     public static void main (String[] args) {
-        Cuenta cuentaDeDiego = new Cuenta();
+        Cuenta cuentaDeDiego = new Cuenta(455);
         // cuentaDeDiego.saldo = 100;
-        cuentaDeDiego.deposita(100);
-        cuentaDeDiego.deposita(50);
+        cuentaDeDiego.depositar(100);
+        cuentaDeDiego.depositar(50);
         System.out.println(cuentaDeDiego.getSaldo());
 
-        boolean consigioRetirar = cuentaDeDiego.saca(20);
+        boolean consigioRetirar = cuentaDeDiego.retirar(20);
         System.out.println(cuentaDeDiego.getSaldo());
         System.out.println(consigioRetirar);
 
-        Cuenta cuentaDeJimena = new Cuenta();
-        cuentaDeJimena.deposita(1000);
+        Cuenta cuentaDeJimena = new Cuenta(415);
+        cuentaDeJimena.depositar(1000);
 
-        boolean exitoTransferencia = cuentaDeJimena.transfiere(300, cuentaDeDiego);
+        boolean exitoTransferencia = cuentaDeJimena.transferir(300, cuentaDeDiego);
         if(exitoTransferencia) {
             System.out.println("transferencia exitosa");
         } else {

@@ -12,7 +12,7 @@ public class Flujo {
         System.out.println("Inicio de metodo1");
         try {
             metodo2();
-        } catch(MiException ex) {
+        } catch(Exception ex) {
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
             ex.printStackTrace();

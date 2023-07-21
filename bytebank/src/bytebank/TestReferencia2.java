@@ -9,7 +9,7 @@ public class TestReferencia2 {
 		daniel.setTelefono ("3356985471");
 		daniel.setDocumento("516987");
 
-		Cuenta cuentaDaniel = new Cuenta();
+		Cuenta cuentaDaniel = new Cuenta(765);
 		cuentaDaniel.titular = daniel;
 
 		System.out.println(cuentaDaniel.titular.getDocumento());

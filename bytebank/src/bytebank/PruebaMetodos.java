@@ -4,7 +4,7 @@ public class PruebaMetodos {
 
 	public static void main(String[] args) {
 
-		Cuenta cuentaDaniel = new Cuenta();
+		Cuenta cuentaDaniel = new Cuenta(785);
 		cuentaDaniel.saldo = 300;
 		cuentaDaniel.depositar(200);
 
@@ -13,7 +13,7 @@ public class PruebaMetodos {
 		cuentaDaniel.retirar(100);
 		System.out.println(cuentaDaniel.saldo);
 
-		Cuenta cuentaJimena = new Cuenta();
+		Cuenta cuentaJimena = new Cuenta(865);
 		cuentaJimena.depositar(1000);
 		boolean puedeTransferir = cuentaJimena.transferir(400, cuentaDaniel);
 
