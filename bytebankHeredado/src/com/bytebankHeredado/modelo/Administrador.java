@@ -1,7 +1,7 @@
 package com.bytebankHeredado.modelo;
 
 public class Administrador extends Funcionario implements Autenticable {
-	
+
 	private AutenticacionUtil util;
 
 	public Administrador() {
@@ -11,7 +11,7 @@ public class Administrador extends Funcionario implements Autenticable {
 	@Override
 	public double getBonificacion() {
 		return this.getSalario();
-		
+
 	}
 
 	@Override
@@ -22,7 +22,7 @@ public class Administrador extends Funcionario implements Autenticable {
 	@Override
 	public void setClave(String clave) {
 		this.util.setClave(clave);
-		
+
 	}
 
 }

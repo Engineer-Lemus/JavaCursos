@@ -8,7 +8,6 @@ public class Cliente implements Autenticable {
 
 	private AutenticacionUtil util;
 
-
 	public Cliente() {
 		this.util = new AutenticacionUtil();
 	}

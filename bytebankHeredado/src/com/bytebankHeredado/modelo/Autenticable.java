@@ -1,6 +1,6 @@
 package com.bytebankHeredado.modelo;
 
-public interface Autenticable  {
+public interface Autenticable {
 
 	public void setClave(String clave);
 

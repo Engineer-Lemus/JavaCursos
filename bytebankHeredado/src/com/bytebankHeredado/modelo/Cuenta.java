@@ -1,7 +1,7 @@
 package com.bytebankHeredado.modelo;
 
 /**
- * Cuenta va  a creae nuevas instancias de cuenta corriente, cuenta de ahorros
+ * Cuenta va a creae nuevas instancias de cuenta corriente, cuenta de ahorros
  * 
  * @author HappyFeet
  * @version 1.0
@@ -10,11 +10,11 @@ package com.bytebankHeredado.modelo;
  */
 
 public abstract class Cuenta {
-	
-	//public accesible cualquier parte proyecto
-	//default	accesible dentro del paquete
-	//protected default + clases hijas
-	//private solo desde la clase
+
+	// public accesible cualquier parte proyecto
+	// default accesible dentro del paquete
+	// protected default + clases hijas
+	// private solo desde la clase
 
 	protected double saldo;
 	private int agencia = 1;
@@ -26,22 +26,24 @@ public abstract class Cuenta {
 	public static int getTotal() {
 		return total;
 	}
-	
-/**
- * Instancia una nueva cuenta sin parametros
- * @author HappyFeet
- */
+
+	/**
+	 * Instancia una nueva cuenta sin parametros
+	 * 
+	 * @author HappyFeet
+	 */
 	public Cuenta() {
 	}
-	
+
 	/**
-	 * Instancia una nueva cuenta  usando agencia y numero
+	 * Instancia una nueva cuenta usando agencia y numero
+	 * 
 	 * @author HappyFeet
 	 */
 	public Cuenta(int agencia, int numero) {
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println(" Estoy Creando una Cuenta " + this.numero);
+		System.out.println("Estoy Creando una Cuenta " + this.numero);
 
 		Cuenta.total++;
 
@@ -58,15 +60,16 @@ public abstract class Cuenta {
 	}
 
 	public abstract void depositar(double valor);
-	
+
 	/**
-	 * Este metodo retira dinero de la cuenta y si ocurre un error  devuelve una excepcion
+	 * Este metodo retira dinero de la cuenta y si ocurre un error devuelve una
+	 * excepcion
 	 * 
 	 * @param valor
 	 * @throws SaldoInsuficienteException
 	 */
 
-	public void retirar(double valor) throws SaldoInsuficienteException  {
+	public void retirar(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor) {
 			throw new SaldoInsuficienteException("No tienes Saldo");
 
@@ -79,7 +82,7 @@ public abstract class Cuenta {
 			try {
 				this.retirar(valor);
 			} catch (SaldoInsuficienteException e) {
-				
+
 				e.printStackTrace();
 			}
 			cuenta.depositar(valor);
@@ -115,6 +118,13 @@ public abstract class Cuenta {
 	}
 
 	public static void main(String[] args) {
-		
+
 	}
+
+	@Override
+	public String toString() {
+		String cuenta = "Numero: " + this.numero + " , Agencia: " + this.agencia;
+		return cuenta;
+	}
+
 }

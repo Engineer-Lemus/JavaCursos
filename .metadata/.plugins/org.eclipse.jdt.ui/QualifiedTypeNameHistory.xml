@@ -14,4 +14,14 @@
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="bytebankHeredado.SaldoInsuficienteException"/>
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.Control"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.SistemaInterno"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.Gerente"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.Administrador"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.CuentaCorriente"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.CuentaAhorros"/>
+    <fullyQualifiedTypeName name="bytebankHeredado.modelo.Contador"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.Cuenta"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.CuentaCorriente"/>
 </qualifiedTypeNameHistroy>
