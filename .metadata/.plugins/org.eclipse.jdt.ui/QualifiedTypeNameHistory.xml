@@ -22,6 +22,13 @@
     <fullyQualifiedTypeName name="bytebankHeredado.modelo.CuentaCorriente"/>
     <fullyQualifiedTypeName name="bytebankHeredado.modelo.CuentaAhorros"/>
     <fullyQualifiedTypeName name="bytebankHeredado.modelo.Contador"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.CuentaAhorros"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.GuardaCuentas"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.GuardaReferencias"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.Cuenta"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.CuentaCorriente"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
