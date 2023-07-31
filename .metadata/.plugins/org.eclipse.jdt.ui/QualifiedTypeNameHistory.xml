@@ -23,12 +23,18 @@
     <fullyQualifiedTypeName name="bytebankHeredado.modelo.CuentaAhorros"/>
     <fullyQualifiedTypeName name="bytebankHeredado.modelo.Contador"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.CuentaAhorros"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.GuardaCuentas"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.GuardaReferencias"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.Cuenta"/>
+    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMExcC14NMethod"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.CuentaAhorros"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="com.bytebankHeredado.test.TestOrdenarLista.OrdenadorPorNumeroCuenta"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.CuentaCorriente"/>
     <fullyQualifiedTypeName name="com.bytebankHeredado.modelo.Cliente"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
